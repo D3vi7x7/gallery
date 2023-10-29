@@ -1,0 +1,266 @@
+@font-face {
+    font-family: raindrops;
+    src: url(raindrops-raindrops-regular-400.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.load-screen{
+    position: relative;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    background-color: rgb(43, 43, 43);
+    width: 0%;
+    height: 100%;
+}
+
+.load-screen1{
+    position: relative;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    background-color: rgb(43, 43, 43);
+    width: 0%;
+    height: 100%;
+}
+
+.load-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#main{
+    width: 100%;
+    height: 120%;
+    background-color: rgb(255, 255, 255);
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#page1 #nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-family: raindrops;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#nav button{
+    background-color: black;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#front{
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+
+#front img:nth-child(1){
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    filter: grayscale(100%);
+    opacity: 0;
+    left: 13%;
+    top: 20%;
+    transition: linear 0.4s;
+    overflow: hidden;
+}
+
+#front img:nth-child(1):hover{
+    filter: grayscale(0%);
+    box-shadow: 50px black;    
+}
+
+#front #img12{
+    position: absolute;
+    filter: grayscale(100%);
+    width: 250px;
+    height: 250px;
+    right: 10%;
+    bottom: 15%;
+    transition: linear 0.4s;
+}
+
+#front #img12:hover{
+    filter: grayscale(0%);
+    box-shadow: 50px black;    
+}
+
+#front #img13{
+    position: absolute;
+    filter: grayscale(100%);
+    width: 250px;
+    height: 250px;
+    right: 17%;
+    top: 15%;
+    transition: linear 0.4s;
+}
+
+#front #img13:hover{
+    filter: grayscale(0%);
+    box-shadow: 50px black;    
+}
+
+#img4{
+    width: 270px;
+    height: 270px;
+}
+
+#front #img14{
+    position: absolute;
+    filter: grayscale(100%);
+    left: 1%;
+    bottom: 35%; 
+    transition: linear 0.4s;
+}
+
+#front #img14:hover{
+    filter: grayscale(0%);
+    box-shadow: 50px black;    
+}
+
+#img5{
+    width: 470px;
+    height: 470px;
+}
+
+#front #img15{
+    position: absolute;
+    filter: grayscale(100%);
+    width: 470px;
+    height: 470px;
+    scale: 1.7;
+    left: 35%;
+    top: 13%; 
+    transition: linear 0.4s;
+}
+
+#front #img15:hover{
+    filter: grayscale(0%);
+    box-shadow: 50px black;    
+}
+
+#img6{
+    width: 370px;
+    height: 370px;
+}
+
+#front #img16{
+    position: absolute;
+    filter: grayscale(100%);
+    width: 370px;
+    height: 370px;
+    scale: 1.3;
+    left: 23%;
+    bottom: 14%; 
+    transition: linear 0.4s;
+}
+
+#front #img16:hover{
+    filter: grayscale(0%);
+    box-shadow: 50px black;    
+}
+
+#img1home{
+    position: absolute;
+    left: 10%;
+    top: 28.5%;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+@font-face {
+    font-family: grafika;
+    src: url(grafika-grafika-400.ttf);
+}
+
+#img1head{
+    font-family: grafika;
+    font-weight: 300;
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+}
+
+#img1bd{
+    font-family: grafika;
+    font-weight: 100;
+    font-size: 26px;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    width: 50%;
+}
+
+#img1bd2{
+    font-family: grafika;
+    font-weight: 100;
+    font-size: 26px;
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    width: 50%;
+}
+
+#img1lnk{
+    text-decoration: none;
+    color: black;
+    font-family: grafika;
+    font-size: 15;
+    background-color: white;
+    border: black 2px solid;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 20%;
+    left: 38%;
+    border-radius: 3.5px;
+}
+
+#head{
+    text-decoration: none;
+    color: black;
+    font-family: raindrops;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0px 30px;
+    position: absolute;
+    top: 25px;
+}
